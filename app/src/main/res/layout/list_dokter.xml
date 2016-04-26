@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.syamsulkamal.dokterapp.MainActivity"
+    android:background="@drawable/android_background">
+
+    <ScrollView
+        android:layout_width="400dp"
+        android:layout_height="800dp"
+        android:id="@+id/scrollView"
+        android:fillViewport="true"
+        android:layout_alignParentEnd="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="     Dokter GIGI"
+                android:id="@+id/button"
+                android:gravity="center_vertical"
+                android:background="@drawable/mybutton"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="93dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="   Dokter ANAK"
+                android:id="@+id/button2"
+                android:gravity="center_vertical"
+                android:background="@drawable/mybutton"
+                android:layout_marginStart="44dp"
+                android:layout_alignTop="@+id/button"
+                android:layout_toEndOf="@+id/button" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="   Dokter SARAF"
+                android:id="@+id/button3"
+                android:gravity="center_vertical"
+                android:background="@drawable/mybutton"
+                android:layout_marginTop="34dp"
+                android:layout_below="@+id/button"
+                android:layout_toStartOf="@+id/button2" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="   Dokter JANTUNG"
+                android:textSize="12dp"
+                android:id="@+id/button4"
+                android:gravity="center_vertical"
+                android:background="@drawable/mybutton"
+                android:layout_alignTop="@+id/button3"
+                android:layout_alignStart="@+id/button2" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="      Dokter mata"
+                android:textSize="12dp"
+                android:id="@+id/button5"
+                android:gravity="center_vertical"
+                android:background="@drawable/mybutton"
+                android:layout_below="@+id/button3"
+                android:layout_toStartOf="@+id/button2"
+                android:layout_marginTop="33dp" />
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:text="     Dokter bedah"
+                android:textSize="12dp"
+                android:id="@+id/button6"
+                android:gravity="center_vertical"
+                android:background="@drawable/mybutton"
+                android:layout_alignTop="@+id/button5"
+                android:layout_alignStart="@+id/button4" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="CARI DOKTER"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>
